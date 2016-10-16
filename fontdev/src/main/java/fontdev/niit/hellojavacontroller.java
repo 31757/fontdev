@@ -17,11 +17,54 @@ import org.springframework.web.servlet.ModelAndView;
 	 return mvc;
 		}
 		
-		@RequestMapping(value={"/signin"})
-		public ModelAndView gotosignin()
+		@RequestMapping(value={"/about"})
+		public ModelAndView gotoabout()
 		{
 	 ModelAndView mvc=new ModelAndView();
-	 mvc.setViewName("signin");
+	 mvc.setViewName("about");
+	 return mvc;
+		}
+		
+		@RequestMapping(value={"/sign"})
+		public ModelAndView gotosign()
+		{
+	 ModelAndView mvc=new ModelAndView();
+	 mvc.setViewName("sign");
+	 return mvc;
+		}
+		
+	 @RequestMapping(value={"/log"})
+		public ModelAndView gotolog()
+		{
+	 ModelAndView mvc=new ModelAndView();
+	 mvc.setViewName("log");
+	 return mvc;
+	 
+	      }
+		
+		@RequestMapping(value={"/contact"})
+		public ModelAndView gotocontact()
+		{
+	 ModelAndView mvc=new ModelAndView();
+	 mvc.setViewName("contact");
+	 return mvc;
+		
+	      }
+		
+		@RequestMapping(value={"/product"})
+		public ModelAndView gotoproduct()
+		{
+	 ModelAndView mvc=new ModelAndView();
+	 mvc.setViewName("product");
+	 return mvc;
+		
+	      }
+		
+		@RequestMapping(value={"/viewall"})
+		public ModelAndView gotoviewall()
+		{
+	 ModelAndView mvc=new ModelAndView();
+	 mvc.setViewName("viewall");
 	 return mvc;
 		
 	      }

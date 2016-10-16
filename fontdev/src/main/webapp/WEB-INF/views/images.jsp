@@ -7,6 +7,10 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -20,11 +24,27 @@
       </div>
     
       <div class="item">
-        <img src="./resources/images/Koala.jpg" width="1200" height="400">
+        <img src="./resources/images/Chrysanthemum.jpg" width="1200" height="400">
       </div>
 
       <div class="item">
+        <img src="./resources/images/Tulips.jpg" width="1200" height="400">
+      </div>
+      
+       <div class="item">
+        <img src="./resources/images/Desert.jpg" width="1200" height="400">
+      </div>
+      
+       <div class="item">
+        <img src="./resources/images/Hydrangeas.jpg" width="1200" height="400">
+      </div>
+      
+       <div class="item">
         <img src="./resources/images/Jellyfish.jpg" width="1200" height="400">
+      </div>
+      
+       <div class="item">
+        <img src="./resources/images/Koala.jpg" width="1200" height="400">
       </div>
     </div>
 
