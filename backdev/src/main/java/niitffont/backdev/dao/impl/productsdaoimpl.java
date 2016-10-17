@@ -2,84 +2,57 @@ package niitffont.backdev.dao.impl;
 
 import java.util.List;
 
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import niitffont.backdev.model.products;
-import niitffont.backdev.dao.productsdao;
-import niitffont.backdev.dto.productsdto;
+import niitffont.backdev.dao.ProductsDao;
+import niitffont.backdev.model.Products;
 
+@Repository 
+public class ProductsDaoImpl implements ProductsDao {
 
+	@Autowired
+	private SessionFactory session;
+	
+	
+	public void add(Products product) {
+		// TODO Auto-generated method stub
+		session.getCurrentSession().save(product);
 
-public class productsdaoimpl implements productsdao {
+	}
 
 	
-	public void  createNewproducts()
-	{
-		products p=new products();
-		p.setMobilemodel("samsung galaxy s7");
-		p.setOsversion("4.7.6");
-		p.setPrice("21756");
-		
-		
-		
-	}
-
-	public void add(products products) {
+	public void edit(Products product) {
 		// TODO Auto-generated method stub
-		products p=new products();
-		p.setMobilemodel("");
-		p.setOsversion("");
-		p.setPrice("");
-		
-		
+session.getCurrentSession().update(product);
 	}
 
-	public void edit(products products) {
+	
+	public void delete(int productid) {
+
+session.getCurrentSession().delete(getProducts(productid));
+	}
+
+	
+	public Products getProducts(int productid) {
 		// TODO Auto-generated method stub
-		products p=new products();
-		p.setMobilemodel("");
-		p.setOsversion("");
-		p.setPrice("");
+		return (Products) session.getCurrentSession().get(Products.class, productid);
 	}
 
-	public void delete(String mobilemodel) {
-		// TODO Auto-generated method stub
-		products p=new products();
-		p.setMobilemodel("");
-		p.setOsversion("");
-		p.setPrice("");
-	}
-
-	public products getproducts(String mobilemodel) {
-		// TODO Auto-generated method stub
-		products p=new products();
-		p.setMobilemodel("");
-		p.setOsversion("");
-		p.setPrice("");
-		return null;
-	}
-
+	
 	public List getAllproducts() {
 		// TODO Auto-generated method stub
-		products p=new products();
-		p.setMobilemodel("");
-		p.setOsversion("");
-		p.setPrice("");
-		return null;
+		return session.getCurrentSession().createQuery("from Products").list();
 	}
 
-	public void delete(products products) {
+
+	public void insert(Products p) {
 		// TODO Auto-generated method stub
-		products p=new products();
-		p.setMobilemodel("");
-		p.setOsversion("");
-		p.setPrice("");
-			
+		
 	}
 
-	public productsdto createNewproduct() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
+	
 
 }

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
 
-    <title>contact page - Bootsnipp.com</title>
+    <title>contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -81,12 +81,15 @@
 </div>
 <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
 <br />
-<div class="row">
-<div class="col-xs-12 col-md-12 form-group">
+<div class="row"></div>
+<div class="col-xs-12 col-md-12 form-group"></div>
 <button class="btn btn-primary pull-right" type="submit">Submit</button>
 </form>
 </div>
 </div>
+</div>
+
+
 <div class="col-xs-12" style="height:50px;"></div>
 	<div class="col-xs-12" style="height:50px;"></div>
 	<div class="col-xs-12" style="height:50px;"></div>
@@ -97,5 +100,6 @@
 	</script>
 	
 	<jsp:include page="footer.jsp"/>
+	
 </body>
 </html>

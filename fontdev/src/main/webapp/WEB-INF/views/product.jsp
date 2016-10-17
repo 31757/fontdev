@@ -31,7 +31,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="computer.jsp"><img src="./resources/images/Koala.jpg" alt="Go to W3Schools!" width="150" height=150" border="0">
+        <td><a href="computer.jsp"><img src="./resources/images/Koala.jpg" alt="Go to W3Schools!" width="150" height="150" border="0">
 </a></td>
         <td><a href="laptop.jsp"><img src="./resources/images/Chrysanthemum.jpg" alt="Go to W3Schools!" width="150" height="150" border="0">
 </a></td>

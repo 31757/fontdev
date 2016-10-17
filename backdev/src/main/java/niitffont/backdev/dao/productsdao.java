@@ -2,16 +2,14 @@ package niitffont.backdev.dao;
 
 import java.util.List;
 
-import niitffont.backdev.dto.productsdto;
-import niitffont.backdev.model.products;
+import niitffont.backdev.model.Products;
 
-public interface productsdao {
-	
-	
-	public void add(products products);
-	public void edit(products products);
-	public void delete(products products);
-	public products getproducts(String products);
+public interface ProductsDao {
+	public void add(Products product);
+	public void edit(Products product);
+	public void delete(int productid);
+	public Products getProducts(int productid);
 	public List getAllproducts();
-	public productsdto createNewproduct();
+	public void insert(Products p);
+
 }

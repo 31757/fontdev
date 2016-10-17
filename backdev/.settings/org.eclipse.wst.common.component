@@ -2,5 +2,7 @@
     <wb-module deploy-name="backdev">
         <wb-resource deploy-path="/" source-path="/src/main/java"/>
         <wb-resource deploy-path="/" source-path="/src/main/resources"/>
+        <property name="context-root" value="backdev"/>
+        <property name="java-output-path" value="/backdev/target/classes"/>
     </wb-module>
 </project-modules>
