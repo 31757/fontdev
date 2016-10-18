@@ -45,15 +45,14 @@
  </td>
  </tr>
   </table>
-  </br>
-  </form:form>
+    </form:form>
  
  <table border="1">
- <thead>ID</thead>
+ <thead>Id</thead>
  <thead>Brand</thead>
  <thead>Model</thead>
- <thead>OS</thead>
- <thead>Verion</thead>
+ <thead>Os</thead>
+ <thead>Version</thead>
  <thead>Price</thead>
  <c:forEach items="${productsList}" var="products">
  <tr>

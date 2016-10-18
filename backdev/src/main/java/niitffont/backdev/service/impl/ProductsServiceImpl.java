@@ -42,10 +42,11 @@ productsdao.delete(productid);
 		return productsdao.getProducts(productid);
 	}
 
+	@SuppressWarnings("rawtypes")
 	@Transactional
 	public List getAllproducts() {
 		// TODO Auto-generated method stub
-		return productsdao.getAllproducts();
+		return productsdao.getAll();
 	}
 
 	public void delete(Products product) {

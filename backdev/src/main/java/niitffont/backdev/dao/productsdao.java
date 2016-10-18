@@ -9,7 +9,10 @@ public interface ProductsDao {
 	public void edit(Products product);
 	public void delete(int productid);
 	public Products getProducts(int productid);
-	public List getAllproducts();
+	
+	public List<Products> getAll();
 	public void insert(Products p);
 
 }
+
+

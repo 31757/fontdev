@@ -4,7 +4,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import niitffont.backdev.dao.ProductsDao;
 import niitffont.backdev.model.Products;
-
 public class ProductsTest {
 
 	public static void main(String []args)

@@ -41,6 +41,7 @@ session.getCurrentSession().delete(getProducts(productid));
 	}
 
 	
+	@SuppressWarnings({ "rawtypes", "deprecation" })
 	public List getAllproducts() {
 		// TODO Auto-generated method stub
 		return session.getCurrentSession().createQuery("from Products").list();
@@ -50,6 +51,12 @@ session.getCurrentSession().delete(getProducts(productid));
 	public void insert(Products p) {
 		// TODO Auto-generated method stub
 		
+	}
+
+
+	public List<Products> getAll() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
