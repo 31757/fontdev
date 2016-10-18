@@ -1,7 +1,4 @@
 G:\dtproject\dt\backdev\src\main\java\niitffont\backdev\dao\ProductsDao.java
-G:\dtproject\dt\backdev\src\main\java\niitffont\backdev\dao\impl\ProductsDaoImpl.java
 G:\dtproject\dt\backdev\src\main\java\niitffont\backdev\model\Products.java
 G:\dtproject\dt\backdev\src\main\java\niitffont\backdev\App.java
-G:\dtproject\dt\backdev\src\main\java\niitffont\backdev\controller\ProductsController.java
-G:\dtproject\dt\backdev\src\main\java\niitffont\backdev\service\ProductsService.java
-G:\dtproject\dt\backdev\src\main\java\niitffont\backdev\service\impl\ProductsServiceImpl.java
+G:\dtproject\dt\backdev\src\main\java\niitffont\backdev\daoimpl\ProductsDaoImpl.java

@@ -16,7 +16,7 @@
 <![endif]-->
 <script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-47210639-2","auto"),ga("send","pageview")</script><script type=application/ld+json>{ "@context": "http://schema.org/","@type": "Review","itemReviewed": {"@type": "Thing","name": "Article"},"author": {"@type": "Person","name": "Md Ashraf Malik"}, "reviewRating": {"@type": "Rating","ratingValue": "5","bestRating": "5"}, "publisher": { "@type": "Organization", "name": "Web Developer Bareilly" } }</script>
 <style>
-body{font-family:'Open Sans Condensed',sans-serif;font-size:20px; background:#f8f8f8}
+
 /* header */
 html,body{height:100%; width:100%}
 h1,h2,h3{font-weight:700}
@@ -45,19 +45,10 @@ header .wel{position: relative;text-align: center;padding: 100px 15px 100px;widt
 .social i.fa.fa-linkedin{background:#428099}
 .social i.fa.fa-google-plus{background:#ce4d39}
 
-/* footer*/
-#footer{background:#336; padding-top:30px; padding-bottom:30px; text-align:center; border-top:solid 4px #303}
-#footer p{padding:10px; color:#fff}
-.dont-remove{color:#fff !important; text-decoration:none !important; font-weight:700}
-.rights{display:inline-block; border-top:solid 1px rgba(103, 58, 183, 0.3)}
 
 /* media */
 @media (min-width:768px) { 
-header{ min-height: 100%} 
-header .wel{position:absolute; top:50%; transform:translateY(-50%); -moz-transform:translateY(-50%); -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); padding: 0 50px;}
-.wel-info{max-width:850px; margin-left:auto; margin-right:auto} .
-who-we h2{font-size:42px} .wel h1{font-size:65px} header .wel{font-size:26px} 
-}
+
 
 </style>
 </head>

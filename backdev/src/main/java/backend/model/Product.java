@@ -1,23 +1,16 @@
-package niitffont.backdev.model;
+package backend.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity(name="Product-table")
+public class Product {
 
-public class Products {
 	@Id
-	@Column
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	@Column
 	private String name;
-	@Column
 	private int price;
-	@Column
 	public int getId() {
 		return id;
 	}

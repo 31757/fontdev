@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
 
 
-    <title>CodePen - Sort and Filter a Table Using Angular</title>
-    
+      
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,7 +19,7 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-    <link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css'>
+    
 <link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
 
         <style>
@@ -71,6 +70,7 @@ body { padding-top:50px; }
   </head>
 
   <body translate="no" >
+  
 
     <div class="container" ng-app="sortApp" ng-controller="mainController">
   
@@ -103,45 +103,44 @@ body { padding-top:50px; }
             <span ng-show="sortType == 'brand' && sortReverse" class="fa fa-caret-up"></span>
           </a>
         </td>
+       
         <td>
           <a href="#" ng-click="sortType = 'model'; sortReverse = !sortReverse">
           Model 
             <span ng-show="sortType == 'model' && !sortReverse" class="fa fa-caret-down"></span>
             <span ng-show="sortType == 'model' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'model' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'model' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'model' && sortReverse" class="fa fa-caret-up"></span>
-          </a>
+            </a>
         </td>
+        
         <td>
           <a href="#" ng-click="sortType = 'os'; sortReverse = !sortReverse">
           OS
             <span ng-show="sortType == 'os' && !sortReverse" class="fa fa-caret-down"></span>
             <span ng-show="sortType == 'os' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'os' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'os' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'os' && sortReverse" class="fa fa-caret-up"></span>
+          
           </a>
         </td>
+       
         <td>
           <a href="#" ng-click="sortType = 'version'; sortReverse = !sortReverse">
           Version
             <span ng-show="sortType == 'version' && !sortReverse" class="fa fa-caret-down"></span>
             <span ng-show="sortType == 'version' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'version' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'version' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'version' && sortReverse" class="fa fa-caret-up"></span>
+            
           </a>
         </td>
+        
         <td>
           <a href="#" ng-click="sortType = 'peice'; sortReverse = !sortReverse">
           Price
             <span ng-show="sortType == 'peice' && !sortReverse" class="fa fa-caret-down"></span>
             <span ng-show="sortType == 'peice' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'peice' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'peice' && sortReverse" class="fa fa-caret-up"></span>
-            <span ng-show="sortType == 'peice' && sortReverse" class="fa fa-caret-up"></span>
+            
           </a>
+        </td>
+        <td><a href="#" ng-click="sortType = 'peice'; sortReverse = !sortReverse"></a>
+         Details
+         
         </td>
       </tr>
     </thead>
@@ -153,18 +152,42 @@ body { padding-top:50px; }
         <td>{{ roll.os }}</td>
         <td>{{ roll.version }}</td>
         <td>{{ roll.price }}</td>
+        <td><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        View
+    </button></td>
         
       </tr>
     </tbody>
     
   </table>
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+             
+      
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to cart</button>
+                <button type="button" class="btn btn-primary">Wishlist</button>
+            </div>
+        </div>
+    </div>
+</div>
   
   <p class="text-center text-muted">
-    <a href="#" target="_blank">Read the Tutorial</a>
+
+    
   </p>
   
   <p class="text-center">
-    by <a href="http://scotch.io" target="_blank">scotch.io</a>
+
   </p>
   
 </div>

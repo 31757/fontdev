@@ -68,6 +68,15 @@ import org.springframework.web.servlet.ModelAndView;
 	 return mvc;
 		
 	      }
+		
+		@RequestMapping(value={"/adminlogin"})
+		public ModelAndView gotoadminlogin()
+		{
+	 ModelAndView mvc=new ModelAndView();
+	 mvc.setViewName("adminlogin");
+	 return mvc;
+		
+	      }
 	}		
 		
 		
