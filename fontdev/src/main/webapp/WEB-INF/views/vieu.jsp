@@ -82,7 +82,7 @@ body { padding-top:50px; }
         <div class="input-group-addon"><i class="fa fa-search"></i></div>
 
 
-        <input type="text" class="form-control" placeholder="Search da Fish" ng-model="searchBrand">
+        <input type="text" class="form-control" placeholder="Search Your products" ng-model="searchBrand">
       </div>      
     </div>
   </form>

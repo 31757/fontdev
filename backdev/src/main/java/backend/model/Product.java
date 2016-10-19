@@ -1,37 +1,78 @@
 package backend.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
+@Entity
 public class Product {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	private String name;
-	private int price;
+		 private String brand;
+	 private String model;
+	 private String os;
+	 private String version;
+	 private String price;
+	 
+	 
+
+	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getBrand() {
+		return brand;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setBrand(String brand) {
+		this.brand = brand;
 	}
-	public int getPrice() {
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public String getOs() {
+		return os;
+	}
+	public void setOs(String os) {
+		this.os = os;
+	}
+	public String getVersion() {
+		return version;
+	}
+	public void setVersion(String version) {
+		this.version = version;
+	}
+	public String getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
+	// debugging strategy
 	@Override
 	public String toString() {
-		return "productmodel [id=" + id + ", name=" + name + ", price=" + price + "]";
+		return "Product [id=" + id + ", brand=" + brand + ",model=" + model + ",os=" + os + ",version=" + version + ", price=" + price + "]";
 	}
+	public static  Product add(Product p) {
+		// TODO Auto-generated method stub
+		return p;
+		
+		
+	}
+	public void insert(Product p) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 
 }

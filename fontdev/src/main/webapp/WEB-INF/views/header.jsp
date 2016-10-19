@@ -10,12 +10,12 @@
       <li><a href="<c:url value="/about"/>">About</a></li>
       <li><a href="<c:url value="/product"/>">Products</a></li>
       <li><a href="<c:url value="/contact"/>">Contact</a></li>
-      <li><a href="<c:url value="/viewall"/>">View All</a></li>  
+      <li><a href="<c:url value="/viewall"/>">View All</a></li>
+      <li><a href="<c:url value="/adminworkpage"/>">Admin</a></li>    
     </ul>
     <ul class="nav navbar-nav navbar-right">
      
      <li><a href="<c:url value="/sign"/>"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="<c:url value="/log"/>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       <li><a href="<c:url value="/adminlogin"/>"><span class="glyphicon glyphicon-log-in"></span> Admin</a></li>
     </ul>
   </div>

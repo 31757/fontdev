@@ -1,9 +1,7 @@
 package fontdev.niit;
  
 	import org.springframework.stereotype.Controller;
-
-	import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 	 
 	@Controller
@@ -75,9 +73,33 @@ import org.springframework.web.servlet.ModelAndView;
 	 ModelAndView mvc=new ModelAndView();
 	 mvc.setViewName("adminlogin");
 	 return mvc;
+		} 
+		
+		@RequestMapping(value={"/adminworkpage"})
+		public ModelAndView gotoadminworkpage()
+		{
+	 ModelAndView mvc=new ModelAndView();
+	 mvc.setViewName("adminworkpage");
+	 return mvc;
+		} 
+		
+		@RequestMapping(value={"/prodform"})
+		public ModelAndView gotoprodform()
+		{
+	 ModelAndView mvc=new ModelAndView();
+	 mvc.setViewName("prodform");
+	 return mvc;
+		} 
+		@RequestMapping(value={"/viewform"})
+		public ModelAndView gotoviewform()
+		{
+	 ModelAndView mvc=new ModelAndView();
+	 mvc.setViewName("viewform");
+	 return mvc;
+		} 
 		
 	      }
-	}		
+			
 		
 		
 		
