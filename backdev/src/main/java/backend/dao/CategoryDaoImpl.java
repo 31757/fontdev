@@ -7,34 +7,35 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import backend.model.Product;
 
 
-@Service("ProductsDao")
+
+@Service("CategorysDao")
 @Transactional 
-public class ProductDaoImpl implements ProductsDao {
+public class CategoryDaoImpl implements CategoryDao {
+	@Autowired
 	private SessionFactory sessionFactory;
 	
-	@Autowired
-	private ProductsDao productdao;
+	
+	private CategoryDao Categorydao;
 
-	public void insertProduct(Product Product) {
+	public void insertCategory(CategoryDao Category) {
 		// TODO Auto-generated method stub
-		sessionFactory.getCurrentSession().persist(Product);
+		sessionFactory.getCurrentSession().persist(Category);
 		
 	}
 
-	public List<Product> listProducts() {
+	public List<CategoryDao> getAll() {
 		// TODO Auto-generated method stub
-		return sessionFactory.getCurrentSession().createQuery("FROM Product").list();
+		return sessionFactory.getCurrentSession().createQuery("FROM Category").list();
 	}
 
-	public void updateProduct(int id) {
+	public void updateCategory(int id) {
 		// TODO Auto-generated method stub
 		sessionFactory.getCurrentSession().update(id);
 	}
 
-	public void deleteProduct(int id) {
+	public void deleteCategory(int id) {
 		// TODO Auto-generated method stub
 		sessionFactory.getCurrentSession().delete(getById(id));
 		
@@ -42,9 +43,9 @@ public class ProductDaoImpl implements ProductsDao {
 
 	
 
-	public Product getById(int id) {
+	public CategoryDao getById(int id) {
 		// TODO Auto-generated method stub
-		return sessionFactory.getCurrentSession().get(Product.class,id);
+		return sessionFactory.getCurrentSession().get(CategoryDao.class,id);
 	}
 
 }

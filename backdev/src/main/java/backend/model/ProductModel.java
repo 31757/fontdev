@@ -1,21 +1,30 @@
 package backend.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 
 @Entity
-public class Product {
+@Table 
+public class ProductModel {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column
 	private int id;
+	@Column
 		 private String brand;
+	@Column
 	 private String model;
+	@Column
 	 private String os;
+	@Column
 	 private String version;
+	@Column
 	 private String price;
 	 
 	 
@@ -58,21 +67,12 @@ public class Product {
 		this.price = price;
 	}
 	// debugging strategy
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", brand=" + brand + ",model=" + model + ",os=" + os + ",version=" + version + ", price=" + price + "]";
 	}
-	public static  Product add(Product p) {
-		// TODO Auto-generated method stub
-		return p;
-		
-		
-	}
-	public void insert(Product p) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
 
 }

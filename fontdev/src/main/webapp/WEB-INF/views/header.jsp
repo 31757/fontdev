@@ -11,7 +11,7 @@
       <li><a href="<c:url value="/product"/>">Products</a></li>
       <li><a href="<c:url value="/contact"/>">Contact</a></li>
       <li><a href="<c:url value="/viewall"/>">View All</a></li>
-      <li><a href="<c:url value="/adminworkpage"/>">Admin</a></li>    
+      <li><a href="<c:url value="/admin"/>">Admin</a></li>    
     </ul>
     <ul class="nav navbar-nav navbar-right">
      

@@ -2,20 +2,20 @@ package backend.dao;
 
 import java.util.List;
 
-import backend.model.Product;
+import backend.model.ProductModel;
 
 
 public interface ProductsDao {
 	
 	
-	 public void insertProduct(Product Product);
+	 public void insertProduct(ProductModel Product);
 
-	 public List<Product> listProducts();
+	 public List<ProductModel> getAll();
 	 
-	 public void updateProduct(int id);
+	 public void updateProduct(ProductModel p1);
 	 
 	 public void deleteProduct(int id);
 
-	public Product getById(int id);
+	public ProductModel getById(int id);
 	 
 }

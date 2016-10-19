@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 	 
 	@Controller
 	
-	public class hellojavacontroller {
+	public class PageController {
 		@RequestMapping(value={"/home", "/index","/"})
 		public ModelAndView gotoindex()
 		{
@@ -75,11 +75,11 @@ import org.springframework.web.servlet.ModelAndView;
 	 return mvc;
 		} 
 		
-		@RequestMapping(value={"/adminworkpage"})
-		public ModelAndView gotoadminworkpage()
+		@RequestMapping(value={"/admin"})
+		public ModelAndView gotoadmin()
 		{
 	 ModelAndView mvc=new ModelAndView();
-	 mvc.setViewName("adminworkpage");
+	 mvc.setViewName("admin");
 	 return mvc;
 		} 
 		
