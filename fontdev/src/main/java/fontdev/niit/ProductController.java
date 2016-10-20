@@ -17,7 +17,7 @@ public class ProductController {
 
 	@Autowired
 	ProductsDao proDao= new ProductsDaoImpl();
-	@RequestMapping(value={"/v/get"})
+	@RequestMapping(value={"/fontdev.niit"})
 	@ResponseBody List<ProductModel> view()
 	{
 		return  proDao.getAll();

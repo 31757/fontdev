@@ -3,7 +3,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>niitffont</groupId>
 	<artifactId>fontdev</artifactId>
-	
 	<version>0.0.1-SNAPSHOT</version>
 	<name>fontdev Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -29,6 +28,7 @@
 		<dependency>
 			<groupId>niitffont</groupId>
 			<artifactId>backdev</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
